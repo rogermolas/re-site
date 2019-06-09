@@ -73,8 +73,7 @@
 									 </p>
 									<a href="https://play.google.com/store/apps/details?id=co.raceevents.android" class="appao-btn" target="blank">Google Play</a>
 									<a href="https://itunes.apple.com/ph/app/race-events-co/id1466191425" class="appao-btn" target="blank">App Store</a>
-									<a href="assets/how it works.m4v" class="popup-youtube">
-										<p class="appao-btn"> How it Works</p></a>
+									<!-- <a href="assets/how it works.m4v" class="popup-youtube"><p class="appao-btn"> How it Works</p></a> -->
 								</div>
 							</div>
 							<div class="col-lg-5">
@@ -174,9 +173,9 @@
 							</ul>
 						</div>
 					</div>
-				<div class="col-lg-4">
+				<div class="col-lg-3">
 						<div class="single-feature-box text-center">
-							<img src="assets/img/iphonex.jpg" alt="feature">
+							<img src="assets/img/features.gif">
 						</div>
 					</div>
 				</div>
@@ -240,5 +239,17 @@
 		<script src="assets/js/switcher.js"></script>
 		<!-- main JS -->
 		<script src="assets/js/main.js"></script>
+
+		<script>
+			$("#slideshow > div:gt(0)").hide();
+			setInterval(function() {
+ 	 $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+}, 3000);
+		</script>
 	</body>
 </html>
